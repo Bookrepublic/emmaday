@@ -59,7 +59,7 @@ set :build_dir, 'tmp'
 configure :build do
   activate :minify_css
   activate :minify_javascript
-  activate :imageoptim
+  #activate :imageoptim
   activate :minify_html
   activate :asset_hash
 
