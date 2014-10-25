@@ -133,7 +133,35 @@ GEM
       rack
     rack-test (0.6.2)
       rack (>= 1.0)
+    rails-assets-desandro--doc-ready (1.0.3)
+      rails-assets-eventie (>= 1.0.3, < 2.0)
+    rails-assets-desandro--get-size (1.1.8)
+      rails-assets-desandro--get-style-property
+    rails-assets-desandro--get-style-property (1.0.4)
+    rails-assets-desandro--matches-selector (1.0.2)
+    rails-assets-eventEmitter (4.2.9)
+    rails-assets-eventie (1.0.5)
+    rails-assets-get-size (1.1.8)
+      rails-assets-desandro--get-style-property
+    rails-assets-isotope (2.0.1)
+      rails-assets-desandro--matches-selector (>= 1, < 2)
+      rails-assets-get-size (>= 1, < 2)
+      rails-assets-masonry (>= 3.1.5, < 4)
+      rails-assets-outlayer (>= 1.2.0, < 2)
+    rails-assets-jquery-bridget (1.0.1)
+    rails-assets-masonry (3.1.5)
+      rails-assets-desandro--get-size (>= 1, < 2)
+      rails-assets-outlayer (>= 1.2.0, < 2)
     rails-assets-normalize-scss (3.0.1)
+    rails-assets-outlayer (1.2.0)
+      rails-assets-desandro--doc-ready (>= 1.0.1, < 2.0)
+      rails-assets-desandro--get-size (>= 1, < 2)
+      rails-assets-desandro--get-style-property (>= 1, < 2)
+      rails-assets-desandro--matches-selector (>= 1, < 2)
+      rails-assets-eventEmitter (>= 4.2, < 5)
+      rails-assets-eventie (>= 1.0.3, < 2.0)
+      rails-assets-jquery-bridget (>= 1, < 2)
+    rails-assets-sass-list-maps (1.0.0)
     rb-fsevent (0.9.4)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
@@ -182,7 +210,9 @@ DEPENDENCIES
   middleman-minify-html
   neat
   rack-contrib
+  rails-assets-isotope
   rails-assets-normalize-scss
+  rails-assets-sass-list-maps
   slim
   tzinfo-data
   wdm (~> 0.1.0)

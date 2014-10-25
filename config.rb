@@ -1,13 +1,4 @@
 ###
-# Compass
-###
-
-# Change Compass configuration
-# compass_config do |config|
-#   config.output_style = :compact
-# end
-
-###
 # Page options, layouts, aliases and proxies
 ###
 
@@ -46,12 +37,13 @@ end
 #     "Helping"
 #   end
 # end
+Slim::Engine.set_default_options :pretty => true
 
-set :css_dir, 'stylesheets'
+set :css_dir, 'assets/stylesheets'
 
-set :js_dir, 'javascripts'
+set :js_dir, 'assets/javascripts'
 
-set :images_dir, 'images'
+set :images_dir, 'assets/images'
 
 set :build_dir, 'tmp'
 
