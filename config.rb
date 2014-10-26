@@ -31,6 +31,14 @@ configure :development do
   activate :livereload
 end
 
+# Autoprefixer
+
+activate :autoprefixer do |config|
+  config.browsers = ['last 3 versions', 'Explorer >= 9']
+  config.cascade = true
+  config.inline = true
+end
+
 # Methods defined in the helpers block are available in templates
 # helpers do
 #   def some_helper

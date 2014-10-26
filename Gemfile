@@ -19,6 +19,7 @@ gem 'bourbon'
 gem 'neat'
 gem 'rails-assets-normalize-scss'
 gem 'rails-assets-sass-list-maps'
+gem 'middleman-autoprefixer'
 
 # Assets
 
