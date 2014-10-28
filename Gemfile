@@ -24,7 +24,10 @@ gem 'middleman-autoprefixer'
 # Assets
 
 #gem 'rails-assets-masonry'
-gem 'rails-assets-isotope'
+#gem 'rails-assets-isotope'
+gem 'rails-assets-headroom.js'
+gem "jquery-middleman"
+gem 'rails-assets-bigSlide'
 
 # Optimization
 

@@ -5,8 +5,10 @@ html
     title
       - current_page.data.title || "The Middleman"
     = stylesheet_link_tag 'application', media: 'all'
+    = javascript_include_tag 'application'
     meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"
     meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui, maximum-scale=1.0"
   body class="= page_classes"
+
+    = partial "shared/header"
     = yield
-    = javascript_include_tag 'application'

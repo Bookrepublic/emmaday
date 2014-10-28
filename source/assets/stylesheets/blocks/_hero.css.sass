@@ -1,7 +1,7 @@
 .hero
   background-repeat: no-repeat
   background-position: center center
-  background-color: $light-bg-color
+  //background-color: $light-bg-color
   background-size: cover
   position: relative
 
@@ -36,8 +36,28 @@
 
 .hero--primary
   @extend .hero
-  background-color: $primary-color
   color: white
+  padding-top: 80px
+  text-align: center
+  position: relative
+
+  &:before
+    content: ""
+    z-index: -1
+    background-color: $first-home-color
+    position: absolute
+    top: 0px
+    right: 0px
+    bottom: 50%
+    left: 0px
+    +padding-top(2)
+    +padding-bottom(2)
+
+    +at-breakpoint(lap)
+      bottom: 50%
+
+    +at-breakpoint(palm)
+      bottom: 40%
 
   .hero__text a
     color: white
