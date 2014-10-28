@@ -37,9 +37,12 @@
 .hero--primary
   @extend .hero
   color: white
-  padding-top: 80px
+  padding-top: 5rem
   text-align: center
   position: relative
+
+  +at-breakpoint(lte-lap)
+    padding-top: 3.5rem
 
   &:before
     content: ""

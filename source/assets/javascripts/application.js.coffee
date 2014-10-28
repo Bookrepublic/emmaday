@@ -1,4 +1,4 @@
 #= require jquery
-#= require headroom.js
 #= require bigSlide
+#= require headroom.js
 #= require_tree .
