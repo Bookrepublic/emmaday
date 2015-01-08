@@ -45,7 +45,7 @@ end
 #     "Helping"
 #   end
 # end
-Slim::Engine.set_default_options :pretty => true
+Slim::Engine.set_default_options :pretty => false
 
 set :css_dir, 'assets/stylesheets'
 
@@ -60,7 +60,7 @@ configure :build do
   activate :minify_css
   activate :minify_javascript
   #activate :imageoptim
-  activate :minify_html
+  activate :minify_html, remove_intertag_spaces: true
   activate :asset_hash
 
   # Use relative URLs
