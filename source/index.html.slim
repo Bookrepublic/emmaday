@@ -3,45 +3,156 @@
     = partial "shared/home_hero"
 
 .wrap
-  .grid--middle
-    .grid__item--workshop.lte-lap--12-12.desk--3-12
+  .grid
+    .grid__item.palm--12-12.desk--12-12.align--center.space--both-1
+      h2.alpha Sezione programma
+      h3.alpha Sottotitolo sezione programma
+    .grid__item.palm--12-12.desk--12-12.align--center.space--both-1
+      p.gamma
+        = lorem.paragraph
+
+.wrap
+  .grid--middle.space--both-3
+    .grid__item--workshop.palm--12-12.lap--4-12.desk--3-12
       img src="/images/blocknote-emma.png"
-    .grid__item--workshop.lte-lap--12-12.desk--9-12
+    .grid__item--workshop.palm--12-12.lap--8-12.desk--9-12
+      h2.beta Titolo workshop
+      h3.gamma Sottotitolo evento
+      h4.gamma Orario evento
+      p
+        = lorem.paragraphs 2
+  .grid--middle.space--both-3
+    .grid__item--workshop.palm--12-12.lap--4-12.desk--3-12
+      img src="/images/caffe-emma.png"
+    .grid__item--workshop.palm--12-12.lap--8-12.desk--9-12
+      h2.beta Titolo workshop
+      h3.gamma Sottotitolo evento
+      h4.gamma Orario evento
+      p
+        = lorem.paragraphs 2
+  .grid--middle.space--both-3
+    .grid__item--workshop.palm--12-12.lap--4-12.desk--3-12
+      img src="/images/occhiali-emma.png"
+    .grid__item--workshop.palm--12-12.lap--8-12.desk--9-12
       h2.beta Titolo workshop
       h3.gamma Sottotitolo evento
       h4.gamma Orario evento
       p
         = lorem.paragraphs 2
 
+.wrap
+  .space--both-3.align--center
+    img src="/images/lunch.png"
+
+.wrap
+  .grid--middle.space--both-3
+    .grid__item--workshop.palm--12-12.lap--4-12.desk--3-12
+      img src="/images/blocknote-emma.png"
+    .grid__item--workshop.palm--12-12.lap--8-12.desk--9-12
+      h2.beta Titolo workshop
+      h3.gamma Sottotitolo evento
+      h4.gamma Orario evento
+      p
+        = lorem.paragraphs 2
+  .grid--middle.space--both-3
+    .grid__item--workshop.palm--12-12.lap--4-12.desk--3-12
+      img src="/images/caffe-emma.png"
+    .grid__item--workshop.palm--12-12.lap--8-12.desk--9-12
+      h2.beta Titolo workshop
+      h3.gamma Sottotitolo evento
+      h4.gamma Orario evento
+      p
+        = lorem.paragraphs 2
+
+.wrap
+  .space--both-3.align--center
+    img src="/images/teabreak.png"
+
+.wrap
+  .grid--middle.space--both-3
+    .grid__item--workshop.palm--12-12.lap--4-12.desk--3-12
+      img src="/images/occhiali-emma.png"
+    .grid__item--workshop.palm--12-12.lap--8-12.desk--9-12
+      h2.beta Titolo workshop
+      h3.gamma Sottotitolo evento
+      h4.gamma Orario evento
+      p
+        = lorem.paragraphs 2
+
+.wrap
+  .space--both-3.align--center
+    img src="/images/happy.png"
+
+.wrap
+  .space--both-3.align--center
+    img src ="/images/divider.png"
 
 .wrap
   .grid
-    .grid__item.palm--12-12.desk--12-12.align--center.space--both-2
-      img src="/images/ipad-emma.png"
     .grid__item.palm--12-12.desk--12-12.align--center.space--both-1
-      h1.alpha Ami leggere? Ami scrivere?
-      h2.alpha Il 22 novembre 2014 passa un giorno da Emma
+      h2.alpha Sezione autori
+      h3.alpha Sottotitolo sezione autori
     .grid__item.palm--12-12.desk--12-12.align--center.space--both-1
       p.gamma
-        | Il 22 novembre Emma Books apre le porte della sua grande casa in via degli Olivetani 12 a Milano  e in ognuna delle sue stanze, scrittrici, scrittori e addetti ai vari lavori editoriali proporranno a rotazione workshop su temi legati alla lettura, alla scrittura, alla promozione dei libri.
-        br
-        br
-      p.gamma
-        | Si parlerà di piacere della lettura e senso nel narrare  di divertirsi scrivendo e scrivere per divertirsi di vizi e virtù, di trucchi ed errori da non commettere di social media e comunicazione di blog e social reading e  molto altro.
-    .grid__item.palm--12-12.desk--12-12.align--center.space--both-1
-      h2.beta 6 insegnanti
-      h2.beta 6 workshop
-      h2.beta lunch, tea break e happy hour
-      p.gamma e un ospite a sorpresa
-    .grid__item.palm--12-12.desk--12-12.align--center.space--both-1
-      h2.beta Costo 250 euro
-      h3.beta E per chi si iscrive entro il 9 novembre: 220 euro
-      p.delta Per avere informazionie e aggiornamenti sul programma, scrivi a info@emmabooks.com
-    .grid__item.desk--8-12.align--center.space--both-1.f-float--left
-      img src="/images/macchina-emma.png"
-    .grid__item.width--6-12.desk--4-12.align--center.space--both-1
-      img src="/images/blocknote-emma.png"
-    .grid__item.width--6-12.desk--4-12.align--center.space--both-1.f-float--left
-      img src="/images/caffe-emma.png"
-    .grid__item.width--6-12.desk--4-12.align--center.space--both-1
-      img src="/images/occhiali-emma.png"
+        = lorem.paragraph
+
+.wrap
+  .grid.space--both-3
+    .grid__item.palm--12-12.lap--6-12.desk--4-12.align--center
+      img src="/images/profilepic1.png"
+      h2.gamma.space--top-2
+        | Nome Autore
+      p.space--bottom-2
+        = lorem.paragraph
+    .grid__item.palm--12-12.lap--6-12.desk--4-12.align--center
+      img src="/images/profilepic2.png"
+      h2.gamma.space--top-2
+        | Nome Autore
+      p.space--bottom-2
+        = lorem.paragraph
+    .grid__item.palm--12-12.lap--6-12.desk--4-12.align--center
+      img src="/images/profilepic1.png"
+      h2.gamma.space--top-2
+        | Nome Autore
+      p.space--bottom-2
+        = lorem.paragraph
+    .grid__item.palm--12-12.lap--6-12.desk--4-12.align--center
+      img src="/images/profilepic2.png"
+      h2.gamma.space--top-2
+        | Nome Autore
+      p.space--bottom-2
+        = lorem.paragraph
+    .grid__item.palm--12-12.lap--6-12.desk--4-12.align--center
+      img src="/images/profilepic1.png"
+      h2.gamma.space--top-2
+        | Nome Autore
+      p.space--bottom-2
+        = lorem.paragraph
+    .grid__item.palm--12-12.lap--6-12.desk--4-12.align--center
+      img src="/images/profilepic2.png"
+      h2.gamma.space--top-2
+        | Nome Autore
+      p.space--bottom-2
+        = lorem.paragraph
+
+.wrap
+  .space--both-3.align--center
+    img src ="/images/divider2.png"
+
+.hero--secondary.no-padding-bottom
+  .wrap
+    .hero__body
+      .hero__body__inner
+        .hero__heading
+          h2 Teaser acquisto
+        .hero__text
+          = lorem.paragraph
+          .hero__actions
+            .button Acquista!
+
+.hero--footer
+  .wrap
+    .hero__body
+      .hero__body__inner
+        .hero__heading
+          h4.gamma Questo è il footer

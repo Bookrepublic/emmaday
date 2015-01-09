@@ -65,6 +65,22 @@
   .hero__text a
     color: white
 
+.hero--secondary
+  @extend .hero--primary
+  padding-top: 0rem
+
+  &:before
+    background-color: $second-home-color
+    bottom: 0
+
+.hero--footer
+  @extend .hero--primary
+  +padding-top(2)
+  +padding-bottom(2)
+
+  &:before
+    bottom: 0
+
 +at-breakpoint(desk)
   .hero__heading,
     +font-size(50px)

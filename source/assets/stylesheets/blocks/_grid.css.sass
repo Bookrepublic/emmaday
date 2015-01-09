@@ -27,7 +27,7 @@
 
 .grid__item--workshop
   +grid-item
-  +at-breakpoint(lte-lap)
+  +at-breakpoint(palm)
     text-align: center
 
 .grid--rev
@@ -87,9 +87,6 @@
     +width-setup("#{$name}--")
 
 @if length($grid-breakpoints) > 0
-  [class*="push-"],
-  [class*="pull-"]
-    position: relative
 
   +shift-setup(right, "pull--")
   +shift-setup(left, "push--")
