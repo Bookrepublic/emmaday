@@ -140,6 +140,7 @@ GEM
       rack
     rack-test (0.6.2)
       rack (>= 1.0)
+    rails-assets-animatescroll (1.0.7)
     rails-assets-bigSlide (0.5.1)
     rails-assets-headroom.js (0.7.0)
     rails-assets-normalize-scss (3.0.1)
@@ -194,6 +195,7 @@ DEPENDENCIES
   middleman-minify-html
   neat
   rack-contrib
+  rails-assets-animatescroll
   rails-assets-bigSlide
   rails-assets-headroom.js
   rails-assets-normalize-scss
