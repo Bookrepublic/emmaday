@@ -5,19 +5,22 @@ html
     title
       - current_page.data.title || "The Middleman"
     = stylesheet_link_tag 'application', media: 'all'
-    = javascript_include_tag 'application'
     meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"
     meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui, maximum-scale=1.0"
   body class="= page_classes"
 
     #menu.panel role="navigation"
       ul
-          li
-            =link_to 'Programma', '#programma'
-          li
-            =link_to 'Ospiti', '#ospiti'
-          li
-            =link_to 'Acquista il biglietto', '#buy'
+        li
+          =link_to('#home', onclick: "$('#home').animatescroll();") do
+            img src="/images/logo-emmabooks.png"
+        li
+          =link_to 'Programma', '#', onclick: "$('#programma').animatescroll();"
+        li
+          =link_to 'Ospiti', '#ospiti', onclick: "$('#ospiti').animatescroll();"
+        li
+          =link_to 'Acquista il biglietto', '#buy', onclick: "$('#buy').animatescroll()"
 
     = partial "shared/header"
     = yield
+    = javascript_include_tag 'application'
