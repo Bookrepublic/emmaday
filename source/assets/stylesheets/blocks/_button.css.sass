@@ -1,6 +1,5 @@
 .button
   padding: 0.7em 1em
-  text-decoration: none
   border: 2px solid white
   border-radius: 5px
   display: inline-block
@@ -13,7 +12,8 @@
   -webkit-appearance: none
   +box-sizing(border-box)
   +transition(background 0.3s ease-in-out)
-
+  a
+    text-decoration: none
   &:hover
     background-color: rgba(255,255,255,.3)
     outline: 0
@@ -60,6 +60,7 @@
   color: $base-body-color
   border: 2px solid $base-body-color
   border-radius: 5px
+
   &:hover
     background-color: rgba(94,20,25,.3)
     outline: 0
