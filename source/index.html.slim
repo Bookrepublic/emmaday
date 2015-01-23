@@ -5,53 +5,7 @@
 
 = partial "shared/home_programma"
 
-.wrap#ospiti
-  .grid
-    .grid__item.palm--12-12.desk--12-12.align--center.space--both-1
-      h2.alpha Sezione autori
-      h3.alpha Sottotitolo sezione autori
-    .grid__item.palm--12-12.desk--12-12.align--center.space--both-1
-      p.gamma
-        = lorem.paragraph
-
-.wrap
-  .grid.space--both-3
-    .grid__item.palm--12-12.lap--6-12.desk--4-12.align--center
-      img src="/images/viola-m.png"
-      h2.gamma.space--top-2
-        | Nome Autore
-      p.space--bottom-2
-        = lorem.paragraph
-    .grid__item.palm--12-12.lap--6-12.desk--4-12.align--center
-      img src="/images/ghezzi.png"
-      h2.gamma.space--top-2
-        | Nome Autore
-      p.space--bottom-2
-        = lorem.paragraph
-    .grid__item.palm--12-12.lap--6-12.desk--4-12.align--center
-      img src="/images/rossella-c.png"
-      h2.gamma.space--top-2
-        | Nome Autore
-      p.space--bottom-2
-        = lorem.paragraph
-    .grid__item.palm--12-12.lap--6-12.desk--4-12.align--center
-      img src="/images/monica.png"
-      h2.gamma.space--top-2
-        | Nome Autore
-      p.space--bottom-2
-        = lorem.paragraph
-    .grid__item.palm--12-12.lap--6-12.desk--4-12.align--center
-      img src="/images/profilepic1.png"
-      h2.gamma.space--top-2
-        | Nome Autore
-      p.space--bottom-2
-        = lorem.paragraph
-    .grid__item.palm--12-12.lap--6-12.desk--4-12.align--center
-      img src="/images/profilepic2.png"
-      h2.gamma.space--top-2
-        | Nome Autore
-      p.space--bottom-2
-        = lorem.paragraph
+= partial "shared/home_speaker"
 
 .wrap
   .space--both-3.align--center
@@ -64,9 +18,13 @@
         .hero__heading
           h2 Teaser acquisto
         .hero__text
-          = lorem.paragraph
+          p.gamma Alla fine della giornata scoprirai di avere le idee molto più chiare e <em>una grande voglia di metterti in gioco</em>, spiegando le tue vele. E poi, guardando bene, ti accorgerai che, al tuo vestito, sarà rimasto impigliato anche un sorriso. 
+          p.gamma Parola di Emma.   
+          p.gamma L'iscrizione è obbligatoria. 
+          p.gamma Colazione, lunch e happy hour sono inclusi nel biglietto. 
+          p.gamma Per informazioni: info AT emmabooks DOT com   
           .hero__actions
-            .button.button--hero Acquista!
+            .button.button--hero =link_to 'Acquista!', 'http://www.bookrepublic.it'
 
 .hero--footer
   .wrap
