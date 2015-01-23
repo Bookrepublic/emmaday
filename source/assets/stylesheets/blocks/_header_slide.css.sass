@@ -1,11 +1,18 @@
 .header__hamburger
   display: table-cell
   vertical-align: middle
-  font-size: $base-font-size * 0.9
+  font-size: $base-font-size * 1.8
+  float: right
 
   a
-    color: $brown
+    color: $base-body-color
     text-decoration: none
 
+  +at-breakpoint(gte-small-desk)
+    display: none
+
+.header__logo--devices
+  display: table-cell
+  vertical-aling: middle  
   +at-breakpoint(gte-small-desk)
     display: none

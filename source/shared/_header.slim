@@ -1,7 +1,10 @@
 .header
   .wrap
     .header__hamburger
-      a.menu-link href="#menu" MENU
+      a.menu-link href="#menu" &#9776
+    .header__logo--devices  
+      =link_to('#home', onclick: "$('#home').animatescroll();") do
+        img src="/images/logo-emmabooks.png"
 
     .header__inner
       .header__logo
