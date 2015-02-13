@@ -48,7 +48,23 @@
   +at-breakpoint(lte-lap)
     padding-top: 3.5rem
 
+  &:before
+    content: ""
+    z-index: -1
+    background-color: $first-home-color
+    position: absolute
+    top: 0px
+    right: 0px
+    bottom: 10%
+    left: 0px
+    +padding-top(2)
+    +padding-bottom(2)
 
+    +at-breakpoint(lap)
+      bottom: 10%
+
+    +at-breakpoint(palm)
+      bottom: 10%
 
   .hero__text a
     color: #5E1419
@@ -56,10 +72,8 @@
 .hero--secondary
   @extend .hero--primary
   padding-top: 0rem
-
-  &:before
-    background-color: $second-home-color
-    bottom: 0
+  background-color: $second-home-color
+  
 
 .hero--footer
   @extend .hero--primary
